@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "synapse-instance-adventureworks2019-demo"
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase2_password": {
+			"value": ""
+		},
+		"synapse-instance-adventureworks2019-demo-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:synapse-instance-adventureworks2019-demo.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "synapse-adventureworks2019-demo-server.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "adventureworks2019sample"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "jfnettuno"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"value": "synapse-adventureworks2019-demo-server.database.windows.net"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"value": "adventureworks2019sample"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"value": "jnettuno"
+		},
+		"synapse-instance-adventureworks2019-demo-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://datalakeadwksdemo.dfs.core.windows.net"
+		}
+	}
+}
