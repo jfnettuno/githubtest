@@ -17,14 +17,8 @@
 		"type": "AzureSqlTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": {
-				"value": "@dataset().cw_schema",
-				"type": "Expression"
-			},
-			"table": {
-				"value": "@dataset().cw_table",
-				"type": "Expression"
-			}
+			"schema": "SalesLT",
+			"table": "Product"
 		}
 	}
 }
